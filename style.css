@@ -1,0 +1,105 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: linear-gradient(rgb(235, 55, 52),rgb(58, 52, 235));
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size:3.15rem;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input,form button{
+    padding: 0.4rem;
+    border: none;
+    background: white;
+}
+
+form input{
+    min-width: 40vh;
+}
+
+form button{
+    color:rgba(207, 73, 11, 0.692);
+    background: white;
+    transition:all 0.3s ease;
+}
+form button:hover{
+    color:white;
+    background: rgba(207, 73, 11, 0.692);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.todo-list{
+    min-width: 50vh;
+    margin-right: 4rem;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn,.completed-btn{
+    background: rgb(230, 5, 5);
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.completed-btn{
+    background: rgb(34, 179, 5);
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(5rem) rotateZ(20deg);
+    opacity: 0;
+}
